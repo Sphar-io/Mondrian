@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    	<style>canvas {
-		    border: 1px dotted black;
-		}</style>
-        <title>Piet</title>	 
-    </head>
-    <body>
-        <canvas id="a" width="800" height="800"></canvas>
-        <script type='text/javascript' src='piet.js'></script>
-    </body>
+	<head>
+		<title>Piet</title>	 
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style type="text/css">
+			#a{
+			position:relative;
+			width: 80vh;
+			height: 80vh;
+			box-shadow: 10px 10px 50px #888888;
+
+		}
+		.header{
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+			font-size: 30px;
+		}
+		.subtext{
+			font-family: 'Roboto', sans-serif;
+		}
+		</style>
+	</head>
+	<body>
+		<h3 class="header">Mondrian Generator</h3>
+		<p class="subtext">This program generates a new random piece of modern art every time the page is refreshed. Inspired by Piet Mondrian</p>
+		<canvas id="a"></canvas>
+		<script type='text/javascript' src='piet.js'></script>
+	</body>
 </html>

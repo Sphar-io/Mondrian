@@ -1,6 +1,8 @@
 //initialize canvas
 var a_canvas = document.getElementById("a");
 var ctx = a_canvas.getContext("2d");
+a_canvas.width = Math.floor(.80*window.innerHeight);
+a_canvas.height = Math.floor(.80*window.innerHeight);
 
 //initialize colors
 var Blue = "rgb(65, 131, 215)";
