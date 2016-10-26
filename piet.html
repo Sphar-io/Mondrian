@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Piet</title>	 
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<style type="text/css">
-			#a{
-			position:relative;
-			width: 80vh;
-			height: 80vh;
+<head>
+	<title>Mondrian Generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">	
+		body{
+			background-color: #6C7A89;
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		html {
+			position: relative;
+			min-height: 100%;
+		}
+		#a{
+			display: block;
+			margin: 0px auto;
+			width: 90vh;
+			height: 90vh;
 			box-shadow: 10px 10px 50px #888888;
-
+			background: white;
 		}
-		.header{
-			font-family: 'Roboto', sans-serif;
-			font-weight: bold;
-			font-size: 30px;
+		.darkWell{
+			background: #2C3E50;
+			color: white;
 		}
-		.subtext{
-			font-family: 'Roboto', sans-serif;
+		.footer {
+		  position: absolute;
+		  bottom: 0px;
+		  width: 100%;
+		  background-color: #222;
+		  height: 30px;
 		}
-		</style>
-	</head>
-	<body>
-		<h3 class="header">Mondrian Generator</h3>
-		<p class="subtext">This program generates a new random piece of modern art every time the page is refreshed. Inspired by Piet Mondrian</p>
-		<canvas id="a"></canvas>
-		<script type='text/javascript' src='piet.js'></script>
-	</body>
+		select{
+			color: black;
+		}
+		input[type="text"]{
+			font:13px arial;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="well text-center">
+	<h1 class="text-center">Mondrian Generator</h1>
+	<p>This program generates a new random piece of modern art every time the page is refreshed. Inspired by <a href="https://www.google.com/search?q=piet+mondrian+composition+with+red+yellow+and+blue&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi4pY6YkPnPAhUIeT4KHYXIBDMQ_AUICCgB&biw=1920&bih=940">Piet Mondrian</a><br>Right click to save image as a PNG.</p>
+	<div class="row">
+		<div class="col-xs-12">
+			<canvas id="a"></canvas>
+		</div>
+	</div>
+	<br><p class="muted">Written in JavasScript by Jonathan Sphar</p>
+	<a href="http://sphar.io" class="btn btn-default btn-lg">
+		<span class="glyphicon glyphicon-home">&nbsp;</span>Back to Sphar.io
+	</a>
+</div>
+</div>
+<footer class="footer navbar-fixed-bottom">
+     <div class="container text-center">
+     <p class="text-muted text">&copy; Jonathan Sphar 2016</p>
+     </div>
+</footer>
+<script type='text/javascript' src='piet.js'></script>
+</body>
 </html>
