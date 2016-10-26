@@ -115,10 +115,13 @@ function drawRects(){
 	}
 }
 
-ctx.fillStyle = canvas;
-ctx.fillRect(0,0,1000,1000);
+function createArt(){
+	ctx.fillStyle = canvas;
+	ctx.fillRect(0,0,1000,1000);
+	vertLines();
+	horzLines();
+	makeRects();
+	drawRects();
+}
 
-vertLines();
-horzLines();
-makeRects();
-drawRects();
+createArt();

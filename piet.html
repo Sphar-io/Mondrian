@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<style type="text/css">	
 		body{
 			background-color: #6C7A89;
@@ -47,7 +48,9 @@
 <div class="container">
 <div class="well text-center">
 	<h1 class="text-center">Mondrian Generator</h1>
-	<p>This program generates a new random piece of modern art every time the page is refreshed. Inspired by <a href="https://www.google.com/search?q=piet+mondrian+composition+with+red+yellow+and+blue&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi4pY6YkPnPAhUIeT4KHYXIBDMQ_AUICCgB&biw=1920&bih=940">Piet Mondrian</a><br>Right click to save image as a PNG.</p>
+	<p>This program generates a new random piece of modern art every time the Generate! button is pressed. Inspired by <a href="https://www.google.com/search?q=piet+mondrian+composition+with+red+yellow+and+blue&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi4pY6YkPnPAhUIeT4KHYXIBDMQ_AUICCgB&biw=1920&bih=940">Piet Mondrian</a><br>Right click to save image as a PNG.</p>
+	<button class="btn btn-info btn-lg" onclick="createArt()"><span class="glyphicon glyphicon-refresh">&nbsp;</span>Generate!</button>
+	<br><br>
 	<div class="row">
 		<div class="col-xs-12">
 			<canvas id="a"></canvas>
